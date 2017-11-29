@@ -1,0 +1,40 @@
+<div class="content" ng-controller="updatePostController">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Edit Category</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <form ng-submit="updateCategory()">
+                                <div class="col-sm-8">
+                                    <div class="row theme-row">
+                                        <div class="col-sm-3">
+                                            <label class="control-label">Category Name:</label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="category" ng-model="category" required="required">
+                                        </div>
+                                    </div>
+
+                                    <div class="row theme-row">
+                                        <div class="col-sm-3">
+                                            <label class="control-label mt-5">Description:</label>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" id="description" ng-model="description" name="description" rows="6"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-offset-3 col-sm-3 mt-10">
+                                        <input class="btn btn-success" type="submit">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
